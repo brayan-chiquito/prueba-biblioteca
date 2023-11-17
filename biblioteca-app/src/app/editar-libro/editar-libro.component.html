@@ -1,0 +1,30 @@
+<div class="container">
+
+    <div class="container text-center" style="margin: 30px;">
+        <h3>Editar libro</h3>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="titulo" class="form-label">Titulo del libro</label>
+          <input type="text" class="form-control" id="titulo" name="titulo" required="true" [(ngModel)]="libro.titulo">
+        </div>
+        <div class="mb-3">
+          <label for="autor" class="form-label">Autor del libro</label>
+          <input type="text" class="form-control" id="autor" name="autor" [(ngModel)]="libro.autor">
+        </div>
+        <div class="mb-3">
+            <label for="anio" class="form-label">año de publicacion</label>
+            <input type="text" class="form-control" id="anio" name="anio" [(ngModel)]="libro.anio">
+        </div>
+        <div class="mb-3">
+            <label for="genero" class="form-label">genero</label>
+            <input type="text" class="form-control" id="genero" name="genero" [(ngModel)]="libro.genero">
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-warning btn-sm me-3">Guardar</button>
+            <a href="/" class="btn btn-danger btn-sm">Regresar</a>
+        </div>
+      </form>
+
+</div>
